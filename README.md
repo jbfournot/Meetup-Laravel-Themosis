@@ -139,6 +139,20 @@ mix.sass('assets/sass/style.sass', 'dist/css/theme.css').options({
 @endcomponent
 ```
 
+```php
+<div class="flex-grow flex flex-col bg-white border-b sm:rounded sm:border shadow overflow-hidden">
+    @isset($header)
+        <div class="border-b">
+            <div class="flex justify-between px-4"> {{ $header }}</div>
+        </div>
+    @endisset
+    {{ $slot }}
+    @isset($footer)
+        <div class="px-4 py-10 text-grey">{{ $footer }}</div>
+    @endisset
+</div>
+``
+
 # Création d'un custom post type
 
 On va créer un hook avec la commande `php console make:hook JobsCustomPostType`
