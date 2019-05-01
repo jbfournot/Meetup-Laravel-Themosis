@@ -151,7 +151,7 @@ mix.sass('assets/sass/style.sass', 'dist/css/theme.css').options({
         <div class="px-4 py-10 text-grey">{{ $footer }}</div>
     @endisset
 </div>
-``
+```
 
 # Création d'un custom post type
 
